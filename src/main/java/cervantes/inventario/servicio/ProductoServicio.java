@@ -15,7 +15,7 @@ public class ProductoServicio implements IProductoServicio {
     private ProductoRepositorio productoRepositorio;
     @Override
     public List<Producto> listarProducto() {
-        this.productoRepositorio.findAll();
+        return this.productoRepositorio.findAll();
 
     }
 
@@ -35,6 +35,6 @@ public class ProductoServicio implements IProductoServicio {
     public void eliminarProductoPorId(Integer idProducto) {
 
         this.productoRepositorio.deleteById(idProducto);
-        
+
     }
 }
