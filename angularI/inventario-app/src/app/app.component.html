@@ -3,13 +3,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgb(77, 128, 128);">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sistema de Inventarios </a>
+          <a class="navbar-brand" routerLink="productos" >Sistema de Inventarios </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/">inicio</a>
+              <a class="nav-link active" aria-current="page" routerLink="productos" routerLinkActive="active">inicio</a>
               <a class="nav-link" href="/agregar">Agrega Producto </a>
               
             </div>
@@ -20,4 +20,7 @@
 
 </div>
 
-<app-producto-lista></app-producto-lista>
+<div class="container">
+  <router-outlet></router-outlet>
+
+</div>
