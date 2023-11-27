@@ -21,4 +21,9 @@ export class ProductoService {
       
     }
 
+    agregarProducto(producto:Producto): Observable<Object>{
+      return this.clienteHttp.post(this.urlBase,producto);
+      
+    }
+
 }
