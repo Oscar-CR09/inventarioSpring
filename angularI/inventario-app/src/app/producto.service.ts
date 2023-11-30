@@ -26,4 +26,9 @@ export class ProductoService {
       
     }
 
+    obtenerProductoPorId(id:number){
+      return this.clienteHttp.get<Producto>(`${this.urlBase} /${id}`);
+      
+    }
+
 }
