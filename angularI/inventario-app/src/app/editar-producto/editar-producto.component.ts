@@ -17,7 +17,7 @@ export class EditarProductoComponent {
     private enrutador:Router ){}
 
 
-    ngOnInit(){
+  ngOnInit(){
       this.id = this.ruta.snapshot.params['id'];
       this.productoServicio.obtenerProductoPorId(this.id).subscribe(
         {
@@ -27,5 +27,11 @@ export class EditarProductoComponent {
 
         }
       );
-    }
+  }
+
+
+  onSubmit(){
+
+      //editar producto
+  }
 }
